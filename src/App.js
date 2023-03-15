@@ -6,8 +6,7 @@ import Image from "./components/İmage";
 import Explanation from "./components/Explanation";
 
 function App() {
-  const [apiData, setApiData] = useState(null);
-  const [date, setDate] = useState(new Date());
+  const [apiData, setApiData] = useState({});
 
   useEffect(() => {
     axios
@@ -26,10 +25,10 @@ function App() {
     <div className="App">
       <header>
         <h1>Nasa api</h1>
-        <h2>Tarih: {date.toLocaleDateString()}</h2>
       </header>
       {apiData && (
         <>
+          <h2>Tarih: {apiData.date}</h2>
           <Title title={apiData.title} />
           <Image source={apiData.url} />
           <Explanation explanation={apiData.explanation} />

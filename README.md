@@ -27,6 +27,7 @@ Bu proje, create-react-app (CRA) kullanılarak bir araya getirildi. Bu projenin 
 
 - [ ] Projeyi forklayarak bir kopyasını oluşturun.
 - [ ] Terminalden klonlayın
+
 - [ ] `npm install` proje bağımlılıklarını indirin
 - [ ] `npm start` komutuyla çalıştırın
 - [ ] Push commits: `git push origin main`.
