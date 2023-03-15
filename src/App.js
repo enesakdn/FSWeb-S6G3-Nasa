@@ -6,7 +6,7 @@ import Image from "./components/İmage";
 import Explanation from "./components/Explanation";
 
 function App() {
-  const [apiData, setApiData] = useState({});
+  const [apiData, setApiData] = useState([]);
 
   useEffect(() => {
     axios
